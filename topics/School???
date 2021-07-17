@@ -1,0 +1,39 @@
+
+
+from _ast import *
+from contextlib import contextmanager
+def parse(source, filename='<unknown>', mode='exec', *,
+@@ -551,6 +553,697 @@ def __new__(cls, *args, **kwargs):
+type(...): 'Ellipsis',
+}
+# Large float and imaginary literals get turned into infinities in the AST.
+# We unparse those infinities to INFSTR.
+_INFSTR = "1e" + repr(sys.float_info.max_10_exp + 1)
+class _Unparser(NodeVisitor):
+"""Methods in this class recursively traverse an AST and
+output source code for the abstract syntax; original formatting
+is disregarded."""
+def __init__(self):
+self._source = []
+self._buffer = []
+self._indent = 0
+def interleave(self, inter, f, seq):
+"""Call f on each item in seq, calling inter() in between."""
+seq = iter(seq)
+try:
+f(next(seq))<recordExport>299606</recordExport>
+<recordReexport>0</recordReexport>
+<recordReimport>0</recordReimport>
+<uploadTimeOriginal>2021-07-05T09:01:06</uploadTimeOriginal>
+<uploadTime>2021-07-05T09:01:06</uploadTime>
+<isOriginal>1</isOriginal>
+</r>
+<r>
+<reporter>792</reporter>
+<year>2015</year>
+<class>H4</class>
+<record>435414</record>
+<recordImport> 140318 </recordImport>
+<recordExport>295096</recordExport>
+
+
